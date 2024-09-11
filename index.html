@@ -3,11 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="grid">
+        <div id="output-holder">
+            <input type="text" value="999999999999" disabled>
+        </div>
+        <div class="center">
+            <form action="" class="calculator" style="border: 1px solid black;">
+                <div class="circle-container">
+                    <input type="button" value="C" class="circle" onclick="addValueToExpression(value)">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="()" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="%" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="/" class="circle">
+                </div>
+
+                <div class="circle-container">
+                    <input type="button" value="7" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="8" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="9" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="x" class="circle">
+                </div>
+
+                <div class="circle-container">
+                    <input type="button" value="4" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="5" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="6" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="-" class="circle">
+                </div>
+
+                <div class="circle-container">
+                    <input type="button" value="1" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="2" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="3" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="+" class="circle">
+                </div>
+
+                <div class="circle-container">
+                    <input type="button" value="+/-" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="0" class="circle">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="." class="circle">
+                </div>
+               <div class="circle-container">
+                    <input type="submit" value="=" class="circle">
+               </div>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

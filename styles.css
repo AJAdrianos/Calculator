@@ -1,1 +1,86 @@
-"" 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 600px;
+    height: 600px;
+    gap: 10px;
+}
+
+.center {
+    color: white;
+    font-size: 20px;
+    grid-column: 2 / 3; /* Align in the second column */
+    grid-row: 2 / 3;    /* Align in the second row */
+    
+    /* Adjust size as needed */
+    width: 500px;       
+    height: 500px;
+    padding: 1rem;
+}
+
+#output-holder {
+    padding: 1rem;
+    display: flex;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    min-height: 4rem;
+}
+
+#output-holder > input[type="text"] {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: right;
+    border: 1px solid black;
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    height: 100%;
+    width: 100%;
+}
+
+
+.circle-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.circle-container :hover {
+    color: #616161;
+}
+
+.circle {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    width: 70%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #333;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}

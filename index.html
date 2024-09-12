@@ -8,74 +8,75 @@
 </head>
 <body>
     <div class="grid">
-        <div id="output-holder">
-            <input type="text" value="999999999999" disabled>
+        <div class="output-holder">
+            <input id="expression-output" type="text"  disabled>
+            <input id="evaluation-output" type="text"  disabled>
         </div>
         <div class="center">
             <form action="" class="calculator" style="border: 1px solid black;">
                 <div class="circle-container">
-                    <input type="button" value="C" class="circle" onclick="addValueToExpression(value)">
+                    <input type="button" value="C" class="circle" onclick="clearExpressionAndOutput()">
                 </div>
                 <div class="circle-container">
-                    <input type="button" value="()" class="circle">
+                    <input type="button" value="()" class="circle" onclick="addBracket()">
                 </div>
                 <div class="circle-container">
-                    <input type="button" value="%" class="circle">
+                    <input type="button" value="%" class="circle" onclick="addValueToExpression(value)">
                 </div>
                 <div class="circle-container">
-                    <input type="button" value="/" class="circle">
-                </div>
-
-                <div class="circle-container">
-                    <input type="button" value="7" class="circle">
-                </div>
-                <div class="circle-container">
-                    <input type="button" value="8" class="circle">
-                </div>
-                <div class="circle-container">
-                    <input type="button" value="9" class="circle">
-                </div>
-                <div class="circle-container">
-                    <input type="button" value="x" class="circle">
+                    <input type="button" value="/" class="circle" onclick="addValueToExpression(value)">
                 </div>
 
                 <div class="circle-container">
-                    <input type="button" value="4" class="circle">
+                    <input type="button" value="7" class="circle" onclick="addValueToExpression(value)">
                 </div>
                 <div class="circle-container">
-                    <input type="button" value="5" class="circle">
+                    <input type="button" value="8" class="circle" onclick="addValueToExpression(value)">
                 </div>
                 <div class="circle-container">
-                    <input type="button" value="6" class="circle">
+                    <input type="button" value="9" class="circle" onclick="addValueToExpression(value)">
                 </div>
                 <div class="circle-container">
-                    <input type="button" value="-" class="circle">
+                    <input type="button" value="*" class="circle" onclick="addValueToExpression(value)">
                 </div>
 
                 <div class="circle-container">
-                    <input type="button" value="1" class="circle">
+                    <input type="button" value="4" class="circle" onclick="addValueToExpression(value)">
                 </div>
                 <div class="circle-container">
-                    <input type="button" value="2" class="circle">
+                    <input type="button" value="5" class="circle" onclick="addValueToExpression(value)">
                 </div>
                 <div class="circle-container">
-                    <input type="button" value="3" class="circle">
+                    <input type="button" value="6" class="circle" onclick="addValueToExpression(value)">
                 </div>
                 <div class="circle-container">
-                    <input type="button" value="+" class="circle">
+                    <input type="button" value="-" class="circle" onclick="addValueToExpression(value)">
+                </div>
+
+                <div class="circle-container">
+                    <input type="button" value="1" class="circle" onclick="addValueToExpression(value)">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="2" class="circle" onclick="addValueToExpression(value)">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="3" class="circle" onclick="addValueToExpression(value)">
+                </div>
+                <div class="circle-container">
+                    <input type="button" value="+" class="circle" onclick="addValueToExpression(value)">
                 </div>
 
                 <div class="circle-container">
                     <input type="button" value="+/-" class="circle">
                 </div>
                 <div class="circle-container">
-                    <input type="button" value="0" class="circle">
+                    <input type="button" value="0" class="circle" onclick="addValueToExpression(value)">
                 </div>
                 <div class="circle-container">
-                    <input type="button" value="." class="circle">
+                    <input type="button" value="." class="circle" onclick="addValueToExpression(value)">
                 </div>
                <div class="circle-container">
-                    <input type="submit" value="=" class="circle">
+                    <input type="button" value="=" class="circle" onclick="evaluateExpression()">
                </div>
             </form>
         </div>

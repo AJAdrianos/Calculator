@@ -39,12 +39,14 @@ function addValueToExpression(value) {
         output.value = runningValue;
     }
     else {
-
-        expression += value;
-
-        output.value = value;
-        
-        runningValue = "";
+        if(!expression == ""){
+            if(numberChar.lastIndexOf(expression[expression.length - 1]) != -1 || expression[expression.length - 1] == ")"){
+                expression += value;
+                output.value = value;
+                
+                runningValue = "";
+            }
+        }
     }
 
 
